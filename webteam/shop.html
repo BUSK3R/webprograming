@@ -9,23 +9,49 @@
             text-align: center;
         }
 
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        a {text-decoration: none;}
+        
         .logo {
             float: left;
+            height: 40px;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        .logo img{
+            height: 30px;
+            object-fit: cover;
         }
 
         .login {
             float: right;
+            height: 50px;
+            padding: 10px 20px;
+        }
+
+        .login input { height: 30px; width: 150px;}
+
+        .login button {
+            background-color: #000;
+            color: #fff;
+            border: 0;
+            width: 80px;
+            height: 30px;
         }
 
         .category {
             clear: both;
             margin-top: 20px;
             background-color: black;
+            height: 50px;
         }
-
+        
         .categorybutton{
-           padding:10px;
-           color:white;
+            padding: 0 30px;
+            color:white;
+            line-height: 50px;
+            
         }
 
         .product {
@@ -59,14 +85,14 @@
             <form>
                 <input type="text" name="id" placeholder="ID">
                 <input type="password" name="pw" placeholder="PW">
-                <input type="submit" value="로그인">
-                <button type="button" onclick="location.href='register.html'">회원가입</button >
+                <button>로그인 </button>
+                <button type="button" onclick="location.href='register.html'">회원가입</button>
             </form>
         </div>
 
         <div class="category">
             <a class="categorybutton" href="" >상의</a>
-            <a class="categorybutton" href="">하의</a>
+            <a class="categorybutton" href="bottom.html">하의</a>
             <a class="categorybutton" href="">아우터</a>
             <a class="categorybutton" href="">신발</a>
             <a class="categorybutton" href="">모자</a>
@@ -75,27 +101,35 @@
         <div class="product">
             <div class="product-item">
                 <img src="https://image.msscdn.net/images/goods_img/20210206/1782666/1782666_1_500.jpg" alt="상품1">
+                <p>상품</p>
             </div>
             <div class="product-item">
                 <img src="https://image.msscdn.net/images/goods_img/20210928/2149254/2149254_16946615777686_320.jpg" alt="상품2">
+                <p>상품</p>
             </div>
             <div class="product-item">
                 <img src="https://image.msscdn.net/images/goods_img/20210825/2086653/2086653_1_320.jpg" alt="상품3">
+                <p>상품</p>
             </div>
             <div class="product-item">
                 <img src="https://image.msscdn.net/images/goods_img/20200814/1549285/1549285_1_320.jpg" alt="상품4">
+                <p>상품</p>
             </div>
             <div class="product-item">
                 <img src="https://image.msscdn.net/images/goods_img/20230818/3474398/3474398_16932853992797_500.jpg" alt="상품5">
+                <p>상품</p>
             </div>
             <div class="product-item">
                 <img src="https://image.msscdn.net/images/goods_img/20221220/2990499/2990499_16947562392087_500.jpg" alt="상품6">
+                <p>상품</p>
             </div>
             <div class="product-item">
                 <img src="https://image.msscdn.net/images/goods_img/20230209/3071089/3071089_16759089343124_500.jpg" alt="상품7">
+                <p>상품</p>
             </div>
             <div class="product-item">
                 <img src="https://image.msscdn.net/images/goods_img/20221220/2990438/2990438_16928435614109_500.jpg" alt="상품8">
+                <p>상품</p>
             </div>
         </div>
     </div>
