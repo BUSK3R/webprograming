@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        a {text-decoration: none;}
+        
+        .logo {
+            float: left;
+            height: 40px;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        .logo img{
+            height: 30px;
+            object-fit: cover;
+        }
+
+        .login {
+            float: right;
+            height: 50px;
+            padding: 10px 20px;
+        }
+
+        .login input { height: 30px; width: 150px;}
+
+        .login button {
+            background-color: #000;
+            color: #fff;
+            border: 0;
+            width: 80px;
+            height: 30px;
+        }
+
+        .category {
+            clear: both;
+            margin-top: 20px;
+            background-color: black;
+            height: 50px;
+        }
+        
+        .categorybutton{
+            padding: 0 30px;
+            color:white;
+            line-height: 50px;
+            
+        }
+
+        .product {
+            display: grid;
+            place-items: center;
+            grid-gap: 15px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .product-item {
+            width: 200px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.mokpo.ac.kr/sites/www/images/common/logo_c.png" alt="로고">
+        </div>
+        
+        <div class="login">
+            <form>
+                <input type="text" name="id" placeholder="ID">
+                <input type="password" name="pw" placeholder="PW">
+                <button>로그인 </button>
+                <button type="button" onclick="location.href='register.html'">회원가입</button>
+            </form>
+        </div>
+
+        <div class="category">
+            <a class="categorybutton" href="shop.html" >상의</a>
+            <a class="categorybutton" href="bottom.html">하의</a>
+            <a class="categorybutton" href="outer.html">아우터</a>
+            <a class="categorybutton" href="shoes.html">신발</a>
+            <a class="categorybutton" href="cap.html">모자</a>
+        </div>
+
+        <div class="product">
+            <div class="product-item">
+                <img src="https://image.msscdn.net/images/goods_img/20211130/2252756/2252756_1_220.jpg" alt="상품1">
+                <p>상품</p>
+            </div>
+            <div class="product-item">
+                <img src="https://image.msscdn.net/images/goods_img/20230914/3562348/3562348_16953783497129_220.jpg" alt="상품2">
+                <p>상품</p>
+            </div>
+            <div class="product-item">
+                <img src="https://image.msscdn.net/images/goods_img/20221109/2930276/2930276_16786955021160_220.jpg" alt="상품3">
+                <p>상품</p>
+            </div>
+            <div class="product-item">
+                <img src="https://image.msscdn.net/images/goods_img/20170313/497858/497858_6_220.jpg" alt="상품4">
+                <p>상품</p>
+            </div>
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJlNt4DSX-N6iqFr5DMJrzDrHX-AG4WMCzymqEXeclaQ&s" alt="상품5">
+                <p>상품</p>
+            </div>
+            <div class="product-item">
+                <img src="https://image.msscdn.net/images/goods_img/20220509/2545799/2545799_1_220.jpg" alt="상품6">
+                <p>상품</p>
+            </div>
+            <div class="product-item">
+                <img src="https://image.msscdn.net/images/goods_img/20231005/3605133/3605133_16989744649299_220.jpg" alt="상품7">
+                <p>상품</p>
+            </div>
+            <div class="product-item">
+                <img src="https://image.msscdn.net/images/goods_img/20220504/2541770/2541770_16746179940567_220.jpg" alt="상품8">
+                <p>상품</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
