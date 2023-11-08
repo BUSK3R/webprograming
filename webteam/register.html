@@ -5,8 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <title>회원가입</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                flex-direction: column;
+            }
+    
+            .logo img {
+                height: 40px;
+                object-fit: cover;
+            }
+    
+            a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+    
+            input {
+                width: 200px;
+                height: 30px;
+                margin-bottom: 10px;
+            }
+    
+            button {
+                width: 150px;
+                height: 40px;
+                background-color: #000;
+                color: #fff;
+                border: none;
+                font-size: 1.2em;
+                cursor: pointer;
+            }
+        </style>
     </head>
     <body>
+        <div class="logo">
+            <img src="https://www.mokpo.ac.kr/sites/www/images/common/logo_c.png" alt="로고">
+        </div>
         <a>아이디</a><br>
         <input id="text" type="text" name="UserID" placeholder="ID"><br>
         <a>패스워드</a><br>
