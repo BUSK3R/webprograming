@@ -9,14 +9,7 @@
             border: 2px solid #000;
             width: 1800px; 
             height: 700px;
-            padding:10px;
-        }
-
-        .innercont {
-            border: 2px solid #000;
-            width: 1780px;
-            height: 680px; 
-            margin : 10px;
+            padding:5px;
         }
 
         .product {
@@ -36,18 +29,43 @@
             height: 60px;
         }
 
+        button:hover{
+            background-color: #5c5b5b;
+        }
+
         table{
             width: 1700px; 
-            height: 600px; 
+            height: 800px; 
         }
-        
-    </style>
-</head>
-<body>
+
+        </style>
+        <script>
+            function buy() {
+                alert('구매가 완료 되었습니다.');
+                location.href = 'shop.html';
+            }
+        </script>
+    </head>
+    <body>
     <h1>장바구니</h1>
-    <div class="container">
-        <div class="innercont"></div>
-    </div>
-    <button>구매하기</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th width="350">상품정보</th>
+                <th width="120">v판매가</th>
+                <th width="150">수량</th>
+                <th width="100">주문금액</th>
+             </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td width="300"></td>
+              <td width="150"></td>
+              <td width="150"></td>
+              <td width="100"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="buy()"">구매하기</button>
 </body>
 </html>
