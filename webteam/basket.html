@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <style>
+        .container {
+            border: 2px solid #000;
+            width: 1800px; 
+            height: 700px;
+            padding:5px;
+        }
+
+        .product {
+            border: 1px solid #ccc; 
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #000;
+            color: #fff;
+            border: 0;
+            width: 160px;
+            height: 60px;
+        }
+
+        button:hover{
+            background-color: #5c5b5b;
+        }
+
+        table{
+            width: 1700px; 
+            height: 800px; 
+        }
+
+        </style>
+        <script>
+            function buy() {
+                alert('구매가 완료 되었습니다.');
+                location.href = 'shop.html';
+            }
+        </script>
+    </head>
+    <body>
+    <h1>장바구니</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th width="350">상품정보</th>
+                <th width="120">v판매가</th>
+                <th width="150">수량</th>
+                <th width="100">주문금액</th>
+             </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td width="300"></td>
+              <td width="150"></td>
+              <td width="150"></td>
+              <td width="100"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="buy()"">구매하기</button>
+</body>
+</html>
