@@ -3,54 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상세 정보</title>
+    <title>상세정보</title>
     <style>
-        .a {
-            display: table;
-            clear: both;
-            content: "";
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        .detail_product_info_item {
-            float: left;
-            padding-bottom: 94px;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-section {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .product-image {
             width: 50%;
-            margin: -1px 0 0 -1px;
         }
-        .basket {
-            float: right;
-            padding: 30px 39px 30px 40px;
-            width: 509px;
-            box-sizing: border-box;
+        .product-image img {
+            width: 100%;
+            height: auto;
         }
-        .f {
-            float: right;
-            line-height: 28px;
+        .product-details {
+            width: 50%;
+            padding: 20px;
         }
-        .g {
-            margin-top: 15px;
-            padding-bottom: 19px;
-            border: 1px solid #989aa5;
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .product-name {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-size: 18px;
+            color: #e44d26;
+            margin-bottom: 20px;
+        }
+        .buy-now-button {
+            display: block;
+            padding: 10px 20px;
+            background-color: #e44d26;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product-specs {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="a">
-        <div class="detail_product_info_item">
-            <img alt = "상세 정보" src = "https://image.musinsa.com/images/prd_img/2021021010144600000033977.jpg">
-        </div>
-        <div class="basket">
-            <h3 class="b">제품 상세 정보</h3>
-            <div class="c">
-                <div class="d">
-                    <h3 class="e">제품 </h3>
-                </div>
-                <div class="f">
-                    <h2>49,900</h2>
-                </div>
+    <div class="container">
+        <div class="product-section">
+            <div class="product-image">
+                <img alt="상세 정보" src="https://image.musinsa.com/images/prd_img/2021021010144600000033977.jpg">
             </div>
-            <div class="g">
-                <div class="h"></div>
-                <div class="i"></div>
+            <div class="product-details">
+                <h3 class="product-title">제품 상세 정보</h3>
+                <h2 class="product-name">SWEATSHIRT DDANJI_GREY</h2>
+                <div class="product-price">₩75,500</div>
+                <a href="#" class="buy-now-button">바로 구매하기</a>
+                <div class="product-specs">
+                    <div class="product-spec">제품 사양: ...</div>
+                    <div class="product-spec">배송 정보: ...</div>
+                </div>
             </div>
         </div>
     </div>

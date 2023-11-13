@@ -3,11 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상세 정보</title>
+    <title>상세정보</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-section {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .product-image {
+            width: 50%;
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+        }
+        .product-details {
+            width: 50%;
+            padding: 20px;
+        }
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .product-name {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-size: 18px;
+            color: #e44d26;
+            margin-bottom: 20px;
+        }
+        .buy-now-button {
+            display: block;
+            padding: 10px 20px;
+            background-color: #e44d26;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product-specs {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="detail_product_info_item">
-        <img alt = "상세 정보" src = "https://image.musinsa.com/images/prd_img/2022011011292900000091968.jpg">
+    <div class="container">
+        <div class="product-section">
+            <div class="product-image">
+                <img alt="상세 정보" src="https://image.msscdn.net/images/goods_img/20200818/1551840/1551840_1_320.jpg">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">제품 상세 정보</h3>
+                <h2 class="product-name">Deep One Tuck Sweat Pants [Grey]</h2>
+                <div class="product-price">₩39,000</div>
+                <a href="#" class="buy-now-button">바로 구매하기</a>
+                <div class="product-specs">
+                    <div class="product-spec">제품 사양: ...</div>
+                    <div class="product-spec">배송 정보: ...</div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
